@@ -17,10 +17,15 @@ a {
     height: 10vh;
 }
 
-.logo {
+.logo, .logo a{
     display: flex;
     align-items: center;
     width: 100%;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
 }
 
 .logo h1 {
@@ -334,6 +339,10 @@ a {
     margin: 0% 3%;
 }
 
+.navbar .fa-solid {
+    display: none;
+}
+
 @media screen and (min-width: 769px) {
     .list {
         width: 100%;
@@ -359,20 +368,39 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        display: block;
-        height: 100%;
-        padding: 2%;
+    .logo img {
+        width: 30px;
+        height: 30px;
     }
 
-    .logo {
-        width: 100%;
-        margin: auto;
-        justify-content: center;
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar .fa-solid {
+        font-size: 1.5em;
+        display: block;
+        position: absolute;
+        right: 5%;
+        color: rgb(219 27 27);
+    }
+
+    #cross {
+        display: none;
     }
 
     .list {
+        position: absolute;
         display: none;
+        list-style: none;
+        width: 200px;
+        top: 10vh;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        background-color: rgb(255 255 255);
+        box-shadow: -20px 15px 20px 9px black;
     }
 
     .slogan {
@@ -442,5 +470,9 @@ a {
 
     .contact p {
         font-size: 0.75em;
+    }
+
+    #sub-btn{
+        width: 50%;
     }
 }

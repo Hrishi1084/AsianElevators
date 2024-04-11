@@ -16,11 +16,15 @@
 
 <body>
     <div class="navbar">
+        <i class="fa-solid fa-bars" onclick="ShowMenu()" id="hamburger"></i>
+        <i class="fa-solid fa-xmark" onclick="HideMenu()" id="cross"></i>
         <div class="logo">
-            <img src="./images/Logo1.png" alt="Logo" width="50px" height="50px">
-            <h1>ASIAN ELEVATORS</h1>
+            <a href="index.html">
+                <img src="./images/Logo1.png" alt="Logo">
+                <h1>ASIAN ELEVATORS</h1>
+            </a>
         </div>
-        <ul class="list">
+        <ul class="list" id="list">
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Our Products</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -72,6 +76,22 @@
             <p>vikassurya75@gmail.com</p>
         </div>
     </div>
+    <script>
+        var list = document.getElementById("list");
+        var hamburger = document.getElementById("hamburger");
+        var cross = document.getElementById("cross");
+        function ShowMenu() {
+            cross.style.display = "block"
+            hamburger.style.display = "none"
+            list.style.display = "flex";
+        }
+
+        function HideMenu() {
+            hamburger.style.display = "block"
+            cross.style.display = "none"
+            list.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
