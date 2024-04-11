@@ -20,7 +20,7 @@ a {
 .logo, .logo a{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 85%;
 }
 
 .logo img {
