@@ -99,6 +99,10 @@ a {
     font-size: 1.1em;
 }
 
+#contact-button:hover {
+    cursor: pointer;
+}
+
 .about {
     height: 65vh;
 }
